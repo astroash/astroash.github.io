@@ -1,33 +1,50 @@
-body{
+body {
   font-size: 20px;
 }
 
 div {
   background-color: red;
   color: white;
-  margin: 1%;
+  /*margin: 1%;*/
 }
-/*div setup*/
-.column {
-    float: left;
-    padding: 15px;
-    background-color: black;
-}
-.menu {
-  background-color: green;
-  width: 25%;
-}
-.noMargin{
-  margin: :0;
+
+
+/*navi bar*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: Patua One;
 }
-.info {
-  width: 65%;
-  background-color: orange;
+
+#title {
+  float: left;
 }
+#refresh{
+  float: right;
+  color: pink;
+  margin: auto;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
 /*clearfix setup*/
+
 .clearfix {
   background-color: white;
+
 }
 
 .clearfix::after {
@@ -36,22 +53,31 @@ div {
   display: table;
 }
 
+
+/*column setup*/
+
+.column {
+  margin: 1%;
+  float: left;
+  padding: 1%;
+  width: 21%;
+
+}
+
+h2{
+  padding-top: none;
+  margin: 0;
+  text-align: center;
+  font-family: Roboto;
+}
+
 /*menu layout*/
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.menu li {
-    padding: 2%;
-    margin-bottom: 3%;
-    background-color: #33b5e5;
-    color: #ffffff;
-}
+
 
 /*responsive media*/
 
-@media(max-width: 850px) {
+
+/*@media(max-width: 850px) {
   .menu {
     margin: auto;
     width: 75%;
@@ -64,7 +90,9 @@ div {
   .column {
       float:none;
       /*padding: 15px;*/
-  }
+
+
+/*}
 
 }
 @media(max-width: 1030px) {
@@ -82,4 +110,6 @@ div {
       padding: 15px;
   }
 
-}
+}*/
+
+*/
