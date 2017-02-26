@@ -4,36 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <title>News Viewer</title>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lalezar|Covered+By+Your+Grace|Gloria+Hallelujah|Patua+One|Roboto|Reenie+Beanie" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href=main.css>
 </head>
 
 <body>
   <!-- Header -->
-  <div class="header">
-    <h1>Top News Today</h1>
-  </div>
-  <!-- Left selection -->
+  <ul>
+    <li><a href="#" id="title">News Balance - headlines from the spectrum of politics</a></li>
+    <li><a href="#about" id="refresh"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+  </ul>
+  <!-- info -->
+  <!-- <h3>Todays news from the spectrum of politics</h3> -->
+  <!-- News Columns -->
   <div class="clearfix">
-    <div class="menu column">
-      <ul>
-        <li id="news1">News 1</li>
-        <li id="news2">News 2</li>
-        <li id="news3">News 3</li>
-        <li id="news4">News 4</li>
-      </ul>
+    <div class="column" id="leftArt">
+      <h2>Left News</h2>
+      <h3 id="leftPaper"></h3>
+      <!-- <div class="test">
+
+       <article><a href="http://time.com/4683002/president-trump-skip-white-house-correspondents-dinner/?xid=homepage">
+        <h4>President Trump Announces He'll Skip White House Correspondents' Dinner</h4>
+        <p>Trump's tweet ends months of will-he, won't-he speculation about his attendance</p>
+      </article></a></div> -->
     </div>
-
-    <div class="column info">
-      <div class="noMargin">
-        <p>
-          The US space shuttle was the world's first reusable manned spacecraft. The orbiter mounted onto an external tank and rocket boosters reached speeds of up to 18,000mph after lift-off.
-        </p>
-
-      </div>
+    <div class="column" id="cenLeftArt">
+      <h2>Center Left News</h2>
+      <h3 id="cenLeftPaper"></h3>
+    </div>
+    <div class="column" id="cenRightArt">
+      <h2>Center Right News</h2>
+      <h3 id="cenRightPaper"></h3>
+    </div>
+    <div class="column" id="rightArt">
+      <h2>Right News</h2>
+      <h3 id="rightPaper"></h3>
     </div>
   </div>
 
+  <!-- js jQuery-->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>

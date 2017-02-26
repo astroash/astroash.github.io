@@ -1,57 +1,126 @@
-body{
+body {
   font-size: 20px;
+  font-family: Roboto;
+  background: url("backgrounds/brick2.jpg");
+  background-size: cover;
+  padding: 0px;
+  margin: 0;
 }
 
-div {
-  background-color: red;
+/*navi bar*/
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 1.5em;
+  font-family: Lalezar;
+  top: 0;
+  /*position: fixed;*/
+  width: 100%;
+  border: 0px;
+}
+#title {
+  float: left;
+  /*width: 80%;*/
+}
+#refresh{
+  float: right;
+  color: palegreen;
+  /*margin: auto;*/
+  /*width: 20%;*/
+}
+#test{
+  color: wheat;
+  float: left;
+  padding: 1.5%;
+  font-family:covered by your grace;
+  /*text-align: center;*/
+  font-size: 0.8em;
+  /*width: 90%;*/
+}
+li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+
+/*clearfix setup*/
+.clearfix{
   margin: 1%;
 }
-/*div setup*/
-.column {
-    float: left;
-    padding: 15px;
-    background-color: black;
-}
-.menu {
-  background-color: green;
-  width: 25%;
-}
-.noMargin{
-  margin: :0;
-  padding: 0;
-}
-.info {
-  width: 65%;
-  background-color: orange;
-}
-/*clearfix setup*/
-.clearfix {
-  background-color: white;
-}
-
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
+/*column setup*/
+.column {
+  margin: 1%;
+  float: left;
+  padding: 1%;
+  width: 21%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+
+}
+
+h2{
+  padding-top: none;
+  margin: 0;
+  text-align: center;
+  font-family: Lalezar;
+}
+
+h4{
+  font-size: 0.8em;
+  margin: 0;
+  /*color: pink; */
+}
+p{
+  font-size: 0.8em;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+article:hover {
+  background-color: #444;
+  color: white !important;
+}
+article:hover h4, article:hover p {
+  /*background-color: black;*/
+  color: white !important;
+}
+/*article layout*/
+article{
+  border-top: solid;
+  /*border-bottom: solid;*/
+  border-width: thick;
+  border-color: #444;
+  padding: 2%;
+  /*background-color: PALETURQUOISE;*/
+  /*border-radius:0px 0px 20px 20px;*/
+}
+/*h3{
+  font-family:
+}*/
+
 /*menu layout*/
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.menu li {
-    padding: 2%;
-    margin-bottom: 3%;
-    background-color: #33b5e5;
-    color: #ffffff;
-}
+
 
 /*responsive media*/
 
-@media(max-width: 850px) {
+
+/*@media(max-width: 850px) {
   .menu {
     margin: auto;
     width: 75%;
@@ -64,7 +133,9 @@ div {
   .column {
       float:none;
       /*padding: 15px;*/
-  }
+
+
+/*}
 
 }
 @media(max-width: 1030px) {
@@ -82,4 +153,6 @@ div {
       padding: 15px;
   }
 
-}
+}*/
+
+*/
