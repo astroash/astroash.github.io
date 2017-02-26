@@ -1,5 +1,6 @@
 body {
   font-size: 20px;
+    font-family: Roboto;
 }
 
 div {
@@ -25,7 +26,7 @@ ul {
 }
 #refresh{
   float: right;
-  color: pink;
+  color: palegreen;
   margin: auto;
 }
 li a {
@@ -70,6 +71,30 @@ h2{
   text-align: center;
   font-family: Roboto;
 }
+
+h4{
+  font-size: 0.8em;
+  margin: 0;
+}
+p{
+  font-size: 0.8em;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+article:hover {
+  background-color: green;
+}
+
+/*article layout*/
+article{
+  border: solid;
+  padding: 2%;
+}
+/*h3{
+  font-family:
+}*/
 
 /*menu layout*/
 
