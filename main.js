@@ -43,7 +43,12 @@ $(document).ready(function() {
             $(articleID).append("<article><a href =" + articleUrl + "><h4>" + data.articles[i].title + "</h4>" + "<p>" + data.articles[i].description + "</p></a></article>")
         }
     }
+    // title
+    $("#title").hover(function(){
+      $("ul").append("<li id='test'>Social media is incresingly used as a news source benefiting 'click bait headlines' over quality journalism. At <span style ='color:white; font-size:0.9em;font-family:Lalezar'>News Balance</span> you can view the top news stories from a range of papers and a variety of opinions.</li>");},
+      function(){$("#test").remove()}
 
+    );
     // left data
     $.getJSON(api(leftArr), function(data) {
         createArticle(data, "#leftPaper", "#leftArt");

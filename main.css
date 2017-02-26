@@ -14,7 +14,8 @@ ul {
   padding: 0px;
   overflow: hidden;
   background-color: #333;
-  font-family: Patua One;
+  font-size: 1.5em;
+  font-family: Lalezar;
   top: 0;
   /*position: fixed;*/
   width: 100%;
@@ -29,6 +30,15 @@ ul {
   color: palegreen;
   /*margin: auto;*/
   /*width: 20%;*/
+}
+#test{
+  color: wheat;
+  float: left;
+  padding: 1.5%;
+  font-family:covered by your grace;
+  /*text-align: center;*/
+  font-size: 0.8em;
+  /*width: 90%;*/
 }
 li a {
   display: block;
@@ -67,12 +77,13 @@ h2{
   padding-top: none;
   margin: 0;
   text-align: center;
-  font-family: Roboto;
+  font-family: Lalezar;
 }
 
 h4{
   font-size: 0.8em;
   margin: 0;
+  /*color: pink; */
 }
 p{
   font-size: 0.8em;
