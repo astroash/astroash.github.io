@@ -38,7 +38,7 @@ $(document).ready(function() {
 
         $(paperID).text(paperName);
         $(articleID).html()
-        for (i = 0; i < 3; i++) {
+        for (i = 0; i < 5; i++) {
             var articleUrl = removeSlash(data.articles[i].url)
             $(articleID).append("<article><a href =" + articleUrl + "><h4>" + data.articles[i].title + "</h4>" + "<p>" + data.articles[i].description + "</p></a></article>")
         }
