@@ -17,7 +17,6 @@ ul {
   font-size: 1.5em;
   font-family: Lalezar;
   top: 0;
-  /*position: fixed;*/
   width: 100%;
   border: 0px;
 }
@@ -50,6 +49,45 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+/*colum styling*/
+.column {
+  margin: 1%;
+  float: left;
+  padding: 1%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  width: 46%;
+}
+
+.column1,.column2{
+  /*margin: 1%;*/
+  float: left;
+  /*padding: 1%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;*/
+}
+
+/*font styling*/
+h2{
+  padding-top: none;
+  margin: 0;
+  text-align: center;
+  font-family: Lalezar;
+}
+h3{
+  font-family:Patua One;
+}
+h4{
+  font-size: 0.8em;
+  margin: 0;
+}
+p{
+  font-size: 0.8em;
+}
+
 /*footer*/
 footer {
   /*list-style-type: none;*/
@@ -62,7 +100,6 @@ footer {
   text-align: right;
   font-family: Lalezar;
   top: 0;
-  /*position: fixed;*/
   width: 100%;
   border: 0px;
 }
@@ -82,33 +119,6 @@ footer p{
   display: table;
 }
 
-/*column setup*/
-.column {
-  margin: 1%;
-  float: left;
-  padding: 1%;
-  width: 21%;
-  background-color: white;
-  opacity: 0.8;
-  border-radius: 10px;
-
-}
-
-h2{
-  padding-top: none;
-  margin: 0;
-  text-align: center;
-  font-family: Lalezar;
-}
-
-h4{
-  font-size: 0.8em;
-  margin: 0;
-  /*color: pink; */
-}
-p{
-  font-size: 0.8em;
-}
 a{
   text-decoration: none;
   color: black;
@@ -128,52 +138,21 @@ article{
   border-width: thick;
   border-color: #444;
   padding: 2%;
-  /*background-color: PALETURQUOISE;*/
-  /*border-radius:0px 0px 20px 20px;*/
+
 }
-/*h3{
-  font-family:
-}*/
-
-/*menu layout*/
-
-
 /*responsive media*/
 
-
-/*@media(max-width: 850px) {
-  .menu {
-    margin: auto;
-    width: 75%;
-    font-size: 1.3em;
+@media(max-width: 3000px) {
+  .column1,.column2 {
+    width: 50%;
   }
-  .info {
-    width: 90%;
-    font-size: 1.3em;
-  }
-  .column {
-      float:none;
-      /*padding: 15px;*/
-
-
-/*}
-
 }
-@media(max-width: 1030px) {
-  .menu {
-    margin: auto;
-    width: 55%;
-    font-size: 1.2em;
-  }
-  .info {
-    width: 95%;
-    font-size: 1.2em;
-  }
-  .column {
-      float:none;
-      padding: 15px;
-  }
 
-}*/
-
-*/
+@media(max-width: 1000px) {
+  .column1,.column2  {
+    width: 100%;
+  }
+  #cenLeftArt, #rightArt{
+    float: right;
+  }
+}

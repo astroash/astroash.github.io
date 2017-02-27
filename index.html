@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>News Viewer</title>
-  <link href="https://fonts.googleapis.com/css?family=Lalezar|Covered+By+Your+Grace|Gloria+Hallelujah|Patua+One|Roboto|Reenie+Beanie" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lalezar|Covered+By+Your+Grace|Gloria+Hallelujah|Patua+One|Roboto|Merriweather+Sans" rel="stylesheet">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href=main.css>
 </head>
@@ -19,28 +19,27 @@
   <!-- <h3>Todays news from the spectrum of politics</h3> -->
   <!-- News Columns -->
   <div class="clearfix">
-    <div class="column" id="leftArt">
-      <h2>Left News</h2>
-      <h3 id="leftPaper"></h3>
-      <!-- <div class="test">
+    <div class="column1">
+      <div class="column" id="leftArt">
+        <h2>Left News</h2>
+        <h3 id="leftPaper"></h3>
+      </div>
+      <div class="column" id="cenLeftArt">
+        <h2>Center Left News</h2>
+        <h3 id="cenLeftPaper"></h3>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="column" id="cenRightArt">
+        <h2>Center Right News</h2>
+        <h3 id="cenRightPaper"></h3>
+      </div>
+      <div class="column" id="rightArt">
+        <h2>Right News</h2>
+        <h3 id="rightPaper"></h3>
+      </div>
+    </div>
 
-       <article><a href="http://time.com/4683002/president-trump-skip-white-house-correspondents-dinner/?xid=homepage">
-        <h4>President Trump Announces He'll Skip White House Correspondents' Dinner</h4>
-        <p>Trump's tweet ends months of will-he, won't-he speculation about his attendance</p>
-      </article></a></div> -->
-    </div>
-    <div class="column" id="cenLeftArt">
-      <h2>Center Left News</h2>
-      <h3 id="cenLeftPaper"></h3>
-    </div>
-    <div class="column" id="cenRightArt">
-      <h2>Center Right News</h2>
-      <h3 id="cenRightPaper"></h3>
-    </div>
-    <div class="column" id="rightArt">
-      <h2>Right News</h2>
-      <h3 id="rightPaper"></h3>
-    </div>
   </div>
 
   <!-- js jQuery-->
@@ -48,8 +47,8 @@
   <script src="main.js"></script>
 
   <footer>
-  <p>API kindly created by <a href="https://newsapi.org">https://newsapi.org</a></p>
-</footer>
+    <p>API kindly created by <a href="https://newsapi.org">https://newsapi.org</a></p>
+  </footer>
 </body>
 
 </html>
