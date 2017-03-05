@@ -142,17 +142,31 @@ article{
 }
 /*responsive media*/
 
-@media(max-width: 3000px) {
+@media (max-width: 3000px) {
   .column1,.column2 {
     width: 50%;
   }
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .column1,.column2  {
     width: 100%;
   }
+
   #cenLeftArt, #rightArt{
     float: right;
+  }
+
+  h2{
+    font-size: 2em;
+  }
+  h3{
+    font-size: 1.8em;
+  }
+  h4{
+    font-size: 1.5em;
+  }
+  p{
+    font-size: 1.3em;
   }
 }

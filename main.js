@@ -2,9 +2,9 @@ $(document).ready(function() {
     // variables
     // var api = "https://newsapi.org/v1/articles?source=techcrunch&apiKey=d647eb7abbc7414592db03051c5b2b5e";
     var leftArr = ["independent", "the-guardian-uk", "the-guardian-au", "the-huffington-post"];
-    var cenLeftArr = ["associated-press", "bbc-news", "bloomberg", "business-insider", "buzzfeed", "newsweek", "the-new-york-times", "the-washington-post", "time"];
+    var cenLeftArr = ["associated-press", "bbc-news", "bloomberg", "business-insider", "buzzfeed", "newsweek", "the-new-york-times", "the-washington-post", "time", "mirror"];
     var cenRightArr = ["cnbc", "cnn", "financial-times", "fortune", "reuters", "the-economist", "the-times-of-india", "the-wall-street-journal"];
-    var rightArr = ["daily-mail", "metro", "mirror", "the-telegraph"];
+    var rightArr = ["daily-mail", "metro", "the-telegraph"];
 
     // FUNCTIONS
     // Functions for random array selection
