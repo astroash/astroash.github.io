@@ -5,6 +5,8 @@ $(document).ready(function() {
     var cenLeftArr = ["associated-press", "bbc-news", "bloomberg", "business-insider", "buzzfeed", "newsweek", "the-new-york-times", "the-washington-post", "time"];
     var cenRightArr = ["cnbc", "cnn", "financial-times", "fortune", "reuters", "the-economist", "the-times-of-india", "the-wall-street-journal"];
     var rightArr = ["daily-mail", "metro", "mirror", "the-telegraph"];
+    // variable for my 'hidden API'
+    var myKey = config.MY_KEY;
 
     // FUNCTIONS
     // Functions for random array selection
@@ -18,7 +20,7 @@ $(document).ready(function() {
     }
     // function to create API
     function api(array) {
-        return "https://newsapi.org/v1/articles?source=" + randomElement(array) + "&apiKey=d647eb7abbc7414592db03051c5b2b5e";
+        return "https://newsapi.org/v1/articles?source=" + randomElement(array) + "&apiKey="+myKey;
     }
     // name formatting
     function removeFormatting(name) {
