@@ -8,6 +8,12 @@ $(document).ready(function() {
     // variable for my 'hidden API'
     var myKey = config.MY_KEY;
 
+    // Hover description - to appear and disappear on title hover
+    $("#title").hover(function(){
+      $("ul").append("<li id='test'>Social media is incresingly used as a news source benefiting 'click bait headlines' over quality journalism. At <span style ='color:white; font-size:0.9em;font-family:Lalezar'>News Balance</span> you can view the top news stories from a range of papers and a variety of opinions.</li>");},
+      function(){$("#test").remove()}
+    );
+
     // FUNCTIONS
     // Functions for random array selection
     // Return a random integer in the range 0 through n - 1
@@ -18,15 +24,16 @@ $(document).ready(function() {
     function randomElement(array) {
         return array[randomInt(array.length)];
     }
+
     // function to create API
     function api(array) {
         return "https://newsapi.org/v1/articles?source=" + randomElement(array) + "&apiKey="+myKey;
     }
-    // name formatting
+    // name formatting - capitalises all acroyms
     function removeFormatting(name) {
         return name.replace(/-/gi, " ").replace(/\b\w/g, l => l.toUpperCase()).replace(/uk/gi, "UK").replace(/au/gi, "AU").replace(/cnn/gi, "CNN").replace(/cnbc/gi, "CNBC").replace(/bbc/gi, "BBC");
     }
-
+    // some links from api were followed by a backslash. This removes them if they are present.
     function removeSlash(url) {
         if (url[url.length - 1] == "/") {
             url = url.slice(0, -1);
@@ -35,7 +42,6 @@ $(document).ready(function() {
     }
     // function for creating articles
     function createArticle(data, paperID, articleID) {
-        // console.log(data);
         var paperName = removeFormatting(data.source);
 
         $(paperID).text(paperName);
@@ -45,12 +51,6 @@ $(document).ready(function() {
             $(articleID).append("<article><a href =" + articleUrl + "><h4>" + data.articles[i].title + "</h4>" + "<p>" + data.articles[i].description + "</p></a></article>")
         }
     }
-    // title
-    $("#title").hover(function(){
-      $("ul").append("<li id='test'>Social media is incresingly used as a news source benefiting 'click bait headlines' over quality journalism. At <span style ='color:white; font-size:0.9em;font-family:Lalezar'>News Balance</span> you can view the top news stories from a range of papers and a variety of opinions.</li>");},
-      function(){$("#test").remove()}
-
-    );
     // left data
     $.getJSON(api(leftArr), function(data) {
         createArticle(data, "#leftPaper", "#leftArt");
@@ -69,6 +69,4 @@ $(document).ready(function() {
         createArticle(data, "#rightPaper", "#rightArt");
 
     });
-
-
 })
