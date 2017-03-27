@@ -1,7 +1,7 @@
 ## Welcome to my Application README
 
 
-This site has been created as part of the application proccess for [Founders &amp; Coders](http://www.foundersandcoders.com/) full stack developer course.
+This website has been created as part of the application process for [Founders &amp; Coders](http://www.foundersandcoders.com/)' full stack developer course.
 
 **The criteria for the site:**
 * One Page **_tick_**
